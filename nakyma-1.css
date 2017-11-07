@@ -14,5 +14,17 @@ body{
 }
 
 .main{
-    padding: 10px;
+    padding: 10px;    
+}
+
+.selection{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.selection .btn{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 25px;
 }

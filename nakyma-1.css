@@ -8,13 +8,29 @@ body{
     width: 1024px;
     height: 768px;
     margin: 0 auto;
-    background: whitesmoke;
+    background: white;
     border:3px solid #333;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .main{
     padding: 10px;    
+}
+
+.title{
+    background: whitesmoke;
+    margin: -10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.info{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 17px;
 }
 
 .selection{
@@ -27,4 +43,9 @@ body{
     font-weight: bold;
     font-size: 26px;
     margin-bottom: 25px;
+    background: #C82566;
+}
+
+.selection .btn--2{
+    background: #7b25c8;
 }

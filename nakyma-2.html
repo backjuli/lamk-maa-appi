@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="nakyma-2.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Digimaa</title>
+
+</head>
+
+<body>
+    <h1 class="text-center">Tilauskohteen valinta</h1>
+
+    <div class="device">
+
+        <div class="container-fluid main">
+
+            <h1 class="title">
+                <a href="nakyma-1.html" class="back-link">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </a>
+                Valitse työmaa
+            </h1>
+
+            <div class="row location">
+
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label for="addr">Osoite</label>
+                        <input type="text" class="form-control" id="addr">
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn btn-success btn-large float-right">Hae</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dist">Toimitus etäisyys (km)</label>
+                        <input type="number" class="form-control" id="dist">
+                    </div>
+                </div>
+
+                <div class="col-sm-5 map-container">
+                    <div id='map'></div>
+                </div>
+            </div>
+
+            <p class="info info--1">
+                Valitse maa-aineksen määränpää kirjoittamalla kohteen osoite kenttään. Painamalla "Hae", voit varmistaa sijainnin kartalta.
+            </p>
+
+            <p class="info">
+                Toimitusetäisyys kenttään voit asettaa toimittajaien maksimietäisyyden kohteesta.
+            </p>
+
+            <a href="nakyma-3.html" class="btn btn-info btn-block bottom-button">Hyväksy</a>
+        </div>
+
+    </div>
+
+
+    <script src="jquery/jquery-3.2.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamFhbHVoIiwiYSI6ImNqOXk2ZGg5bDRxZnAyd3A3ZjZldXBlcXMifQ.S--A8rs6ZqYkJLPUHbrdVQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v10',
+            center: [25.671115, 60.992809],
+            zoom: 9
+        });
+    </script>
+</body>
+
+</html>

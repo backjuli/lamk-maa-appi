@@ -19,13 +19,13 @@ body{
 }
 
 .header{
-
     background-color: whitesmoke;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: solid;
+    height: 15%;
 }
 
 .back{

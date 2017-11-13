@@ -67,3 +67,19 @@ hr{
     background-color: #C82566;
     height: 1px;
 }
+
+/* nakyma-6: */
+
+.carrier{
+    align-items: center;
+    justify-content: center;
+    border: solid gray;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+}
+
+.carrier:hover{
+    background-color: rgba(153, 153, 102, 0.1);
+    transform: scale(1.01);
+}

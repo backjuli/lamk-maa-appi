@@ -5,55 +5,52 @@ body{
 }
 
 .device{
-
     width: 1024px;
     height: 768px;
-    background: white;
     margin: 0 auto;
+    background: white;
 }
 
-
-.container-fluid{
-    width: inherit;
-    height: inherit;
+.screen-container{
     display: flex;
-    flex-flow: column;
-    padding-right: 0;
-    padding-left: 0;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
 
 }
+.container-fluid{
+    padding: 0;
+    width: inherit;
+    
+}
+
 .header{
     background-color: whitesmoke;
-    height: 100%;
-    width: 100%;
-    border-bottom: solid 1px;
-}
-
-.title{
+    padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    border-bottom: solid;
 }
 
 .back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    text-align: center;
 }
-
-.contant-container{
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top: 5%;
-    margin: 0 0 0 0;
-    justify-content: center;
+.arrow{
+    font-size: 30px;
 }
 
 .row{
-    margin-bottom: 2%;
+    margin: 0;
 }
+
+.content{
+    height: 100%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .left-side{
     text-align: right;
 }
@@ -70,19 +67,13 @@ hr{
 .bottom-panel{
     display: inherit;
     width: 100%;
-    height: 100%;
+    height: 15%;
+    justify-content: flex-end;
 }
 
-.bottom-panel>.row{
-    display: inherit;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
 
 .btn-block{
     height: 100%;
-    border-radius: 0;
     font-size: 100%;
 }
 
